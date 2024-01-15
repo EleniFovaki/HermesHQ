@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+.input-group {
+  text-align: center;
+}
+.login-button {
+  text-align: center;
+  background-color: #e099ef;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%; 
+}
+h3 {
+  text-align: center;
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   /* height: 100vh; Optional: Adjust the height as needed */
+}
+input[type=text], input[type=password] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
