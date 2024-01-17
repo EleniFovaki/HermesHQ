@@ -1,4 +1,4 @@
-import 'C:/Users/A1ex/Desktop/HermesHQ/hermeshq_01/src/css/Login.css';
+import '../css/Login.css';
 
 const Login = () => {
   return (
