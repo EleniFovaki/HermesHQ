@@ -11,8 +11,8 @@
 	<groupId>com</groupId>
 	<artifactId>HermeshqApi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>HermeshqApi</name>
-	<description>Api for the Hermeshq application</description>
+	<name>HermesHQApi</name>
+	<description>Api for the HermesHQ application</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -56,9 +56,12 @@
 			<version>42.7.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<scope>runtime</scope>
+			<groupId>org.hibernate.orm</groupId>
+			<artifactId>hibernate-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>jakarta.transaction</groupId>
+			<artifactId>jakarta.transaction-api</artifactId>
 		</dependency>
 
 	</dependencies>

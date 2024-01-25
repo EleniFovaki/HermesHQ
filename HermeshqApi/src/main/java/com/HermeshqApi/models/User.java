@@ -1,6 +1,10 @@
 package com.HermeshqApi;
 
+@Entity
+@Table(name= "User")
 public class User {
+    @Id
+    @GeneratedValue
     private long userID;
     public String Name;
     private String Email;
