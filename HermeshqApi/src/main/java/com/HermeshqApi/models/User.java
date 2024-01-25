@@ -1,5 +1,7 @@
 package com.HermeshqApi;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 @Entity
 @Table(name= "User")
 public class User {
