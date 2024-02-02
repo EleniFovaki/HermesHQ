@@ -1,5 +1,6 @@
 package com.HermeshqApi.controllers;
 
+import com.HermeshqApi.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,7 +14,7 @@ import javax.persistence.PersistenceContext;
 
 @RestController
 @RequestMapping("/api/auth")
-public class LoginController {
+public class LoginUserController {
 
     @PersistenceContext
     private EntityManager entityManager;
