@@ -1,3 +1,4 @@
+/*
 package com.HermeshqApi.controllers;
 
 import com.HermeshqApi.models.User;
@@ -22,7 +23,7 @@ public class LoginUserController {
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
 
-    @PostMapping("/login")
+    @PostMapping("/register")
     public LoginResponse login(@RequestBody LoginRequest request) {
         try {
             // Query for the user with the provided username
@@ -44,3 +45,4 @@ public class LoginUserController {
         }
     }
 }
+*/

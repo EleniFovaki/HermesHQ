@@ -1,19 +1,17 @@
 package com.HermeshqApi.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name= "User")
 public class User {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long userID;
-    public String Name;
+
+    private String Name;
     private String Email;
-    private String Password;
+    private String password;  // Corrected variable name
 
     public String getName() {
         return Name;
@@ -22,6 +20,7 @@ public class User {
     public void setName(String Name) {
         this.Name = Name;
     }
+
     public String getEmail() {
         return Email;
     }
@@ -31,13 +30,10 @@ public class User {
     }
 
     public String getPassword() {
-        return Password;
+        return password;  // Corrected getter
     }
 
     public void setPassword(String password) {
-        this.Password = Password;
+        this.password = password;  // Corrected setter
     }
 }
-
-
-

@@ -10,4 +10,11 @@ public interface UserRepository extends JpaRepository<User, Long> {
     and Long is the type of the entity's primary key.
      */
     User findByEmail(String email);
+    /*In addition to the methods provided by JpaRepository, the UserRepository interface
+    also declares a custom method called findByEmail().
+    This method uses Spring Data JPA s method name query creation feature to generate a query that finds a user by
+     their email address. The method takes a single argument, which is the email address to search for,
+     and it returns a User object if a match is found, or null otherwise.
+     */
+
 }
