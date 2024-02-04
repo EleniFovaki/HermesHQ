@@ -2,7 +2,11 @@ package com.HermeshqApi.interfaces;
 
 import com.HermeshqApi.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.stereotype.Repository;
 
+@EnableJpaRepositories(basePackages = "com.HermeshqApi.interfaces")
+@Repository
 public interface UserRepository extends JpaRepository<User, Long> {
     /*This indicates that UserRepository extends the JpaRepository interface.
     The JpaRepository is part of Spring Data JPA and provides generic CRUD (Create, Read, Update, Delete)
