@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EntityScan(basePackages = "com.HermeshqApi.models")
-@EnableJpaRepositories(basePackages = "com.HermeshqApi.interfaces")
+@EnableJpaRepositories(basePackages = "com.HermeshqApi.repository")
 @ComponentScan(basePackages = "com.HermeshqApi.services")
 public class HermeshqApi {
     public static void main(String[] args) {

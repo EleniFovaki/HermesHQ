@@ -17,7 +17,6 @@ const Login = () => {
           Sign in
         </button>
     </div>
-        <h3>Or login with</h3>
       </form>
     </div>
   );
